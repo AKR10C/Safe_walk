@@ -89,7 +89,7 @@ document.getElementById("sos-button").addEventListener("click", () => {
     alert(`🚨 Emergency Location:\nLat: ${latitude}, Lng: ${longitude}\n\nOpening dialer and notifying emergency contact.`);
 
     // 2. Contact emergency number (opens dialer)
-    window.open("tel:6206959468");  // use 911 or local number
+    window.open("tel:112");  // use 911 or local number
 
     // 3. Notify emergency contact (backend)
     fetch('/sos_alert', {
